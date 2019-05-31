@@ -1,0 +1,32 @@
+.first_event{
+    display: block;
+   margin-bottom: 30px;
+
+}
+.card mb-3  {
+    height : 30px;
+    width : 53px;
+    box-sizing: border-box;
+}
+shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) ;
+    height : 30px;
+    width : 53px;
+}
+#love:hover {
+    background: #FFFCE5;
+    min-height: 110px;
+    height: 50px;
+    overflow: visible;
+}
+#love {
+    width: 100%;
+    padding: 20px 10px 20px 10px ;
+    background: #EEE; 
+    height: 150px;
+    overflow: hidden;
+    border-bottom: 1px dotted #CCC;
+    -moz-animation: myanim 1s;
+    -o-animation: myanim 1s;
+    animation: myanim 1s;
+}
