@@ -1,187 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Paris-Event</title>
-		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-		<!-- Custom styles for this template -->
-		
-	</head>
-	<body>
-		<header>
 
-			
-			<div class="navbar navbar-dark bg-dark shadow-sm">
-				<div class="container d-flex justify-content-between">
-					<a href="#" class="navbar-brand d-flex align-items-center">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-						<strong>Album</strong>
-					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+<head>
+	<meta charset="utf-8">
+	<title>Paris-Event</title>
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<!-- Custom styles for this template -->
+
+</head>
+
+<body>
+	<header>
+		<div class="navbar navbar-dark bg-dark shadow-sm">
+			<div class="container d-flex justify-content-between">
+				<a href="#" class="navbar-brand d-flex align-items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+						stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+						viewBox="0 0 24 24" focusable="false">
+						<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+						<circle cx="12" cy="13" r="4" /></svg>
+					<strong>Album</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+					aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<main role="main">
+
+		<section class="jumbotron text-center">
+			<div class="container">
+				<h1 class="jumbotron-heading"> Évènements à venir </h1>
+				<p class="lead text-muted">Célébrations, inaugurations, manifestations, festivals, expositions... .</p>
+				<p class="lead text-muted">Nous dressons la liste des grands événements qui se dérouleront à Paris </p>
+				<a href="#" class="btn btn-primary my-2">Mois Juillet</a>
+				<a href="#" class="btn btn-secondary my-2">Mois Août</a>
+				</p>
+			</div>
+		</section>
+		<div class="album py-5 bg-light">
+			<div class="container">
+				<div class="row" id="listDiv">
+					<!-- jquery ajoute chaque evenement ici  -->
 				</div>
 			</div>
-		</header>
+		</div>
+		<div id="listModal"> 
+			<!-- jquery liste des modal ici -->
 
-		<main role="main">
+		</div>
+	</main>
+	<footer class="text-muted">
+		<div class="container">
+			<p class="float-right">
+				<a href="#">Back to top</a>
+			</p>
+			<p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+			<p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a
+					href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
+		</div>
+	</footer>
 
-			<section class="jumbotron text-center">
-				<div class="container">
-					<h1 class="jumbotron-heading"> Évènements à venir </h1>
-					<p class="lead text-muted">Célébrations, inaugurations, manifestations, festivals, expositions... .</p>
-					<p class="lead text-muted">Nous dressons la liste des grands événements qui se dérouleront à Paris </p>
-						<a href="#" class="btn btn-primary my-2">Mois Juillet</a>
-						<a href="#" class="btn btn-secondary my-2">Mois Août</a>
-					</p>
-				</div>
-			</section>
-			<div class="album py-5 bg-light">
-				<div class="container">
-						<div class="row">
-							<div class="col-md-4">
-								<div id="event1">
-										<div class="first_event">
-										<div class="card mb-3 shadow-sm">
-										<img width="348" height="225" src="images/Festival_des_couleurs.jpg" alt="Festival des couleurs">
-										</div>
-										<h3>Festival des couleurs</h3>
-										<p id="love">L’évènement Holi One, le festival coloré d’inspiration indienne, arrive enfin en France. Le concept a été importé d’une fête religieuse et populaire en Inde, qu’un allemand a adoré et a reproduit dans son pays. Après avoir été vu dans toutes les capitales européennes, Parisa enfin la possibilité de lancer des sacs de poudres colorées dans le ciel samedi prochain.</p>
-									
-										<button id="View" type="button" class="btn btn-sm btn-outline-secondary">View</button>
-									
-										<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-										<small class="text-muted">9 mins</small>
-										</div>
-								</div>
-							</div>
-							<div class="col-md-4" >
-									<div class="first_event">
-										<div class="card mb-3 shadow-sm">
-										<img width="348" height="225" src="images/fete_de_la_musique.jpg" alt="Fête de la music"> 
-										</div>
-										<h3>Fête de la music</h3>
-										<p id="love">le 21 juin, qui célèbre le retour de l’été en fanfare. En plus des grands concerts gratuits organisés dans des lieux clés de la capitale, chacun est libre de jouer de son instrument préféré. En ce jour le plus long de l’année, les rues de Paris se mettent au diapason et vous allez en prendre plein les oreilles !</p>
-										
-										
+	<script src="jquery.js"></script>
+	<script src="event.js"></script>
+	<link src="event.css">
+	</link>
+</body>
 
-										
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-										<small class="text-muted">9 mins</small>
-										
-										</div>
-
-							</div>
-							<div class="col-md-4" >
-									<div class="first_event">
-										<div class="card mb-3 shadow-sm">
-										<img width="348" height="225" src="images/Metallica_Festival.jpg" alt="Metallica">
-										</div>
-										<h3>Metallica</h3>
-										<p id="love">En mai et en juin, c’est le moment de profiter des nombreux concerts et spectacles qu’offre Paris ! Le groupe de rock légendaire Metallica enflamme le Stade de France le 12 mai et Giorgio Moroder, le pape italien de la musique disco, est en live au Grand Rex le 22 mai. L’AccorHotels Arena n’est pas en reste puisqu’elle présente deux concerts de légende</p>
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-										<small class="text-muted">9 mins</small>
-										</div>
-							</div>
-							<div class="col-md-4" style="padding-top: 25px;">
-									<div class="first_event">
-										<div class="card mb-3 shadow-sm">
-											<img width="348" height="225" src="images/Creamfield.jpg" alt="Creamfield">
-											</div>	
-											<h3>Creamfield</h3>
-											<p id="love">Saturday will be headlined by leading dance pioneer Eric Prydz, who will be bringing the latest evolution of his HOLO live show to the capital, showing us exactly why he's now considered one of the most exciting innovators in dance music.</p>
-											<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-											<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-											<small class="text-muted">9 mins</small>
-									</div>
-							</div>
-							<div class="col-md-4" style="padding-top: 25px;">
-									<div class="first_event">
-										<div class="card mb-3 shadow-sm">
-											<img width="348" height="225" src="images/Wireless_Festival.jpg" alt="Wireless">
-											</div>	
-											<h3>Wireless</h3>
-											<p id="love">Le festival reçoit certains des plus grands artistes des mondes, entre autres, du grime, du hip-hop et du garage. En 2019, Cardi B, Travis Scott, A$AP Rocky et Migos seront les têtes d'affiche de Wireless. On y verra aussi des performances d'artistes tels que Lanez, Lil Uzi Vert et Rae Sremmurd.</p>
-											<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-											<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-											<small class="text-muted">9 mins</small>
-									</div>
-							</div>
-							<div class="col-md-4" style="padding-top: 25px;">
-									<div class="first_event">
-										<div class="card mb-3 shadow-sm">
-												<img width="348" height="225" src="images/Parklife_Festival.jpg" alt="Parklife Festival">
-											</div>	
-											<h3>Parklife Festival</h3>
-											<p id="love">Parklife Festival s'offre une programmation d'artistes variés chaque année. Après avoir bouclé leur plus impressionnante édition à ce jour, le festival mancunien peut se vanter d'avoir cimenté sa place parmi les chouchous du Royaume-Uni.</p>
-											<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-											<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-											<small class="text-muted">9 mins</small>
-									</div>
-							</div>
-
-							<div class="col-md-4" style="padding-top: 25px;">
-									<div class="first_event">
-										<div class="card mb-3 shadow-sm">
-											<img width="348" height="225" src="images/Lovebox_Festival.jpg" alt="Lovebox Festival">
-											</div>	
-											<h3>Lovebox Festival</h3>
-											<p id="love">Cet été, le festival recevra m Chance the Rapper et Solange, mais aussi Loyle Carner, Brockhampton, Four Tet et Solomun. Un week-end de juillet qui s'annonce bien !</p>
-											<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-											<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-											<small class="text-muted">9 mins</small>
-									</div>
-							</div>
-
-							<div class="col-md-4" style="padding-top: 25px;" >
-									<div class="first_event">
-										<div class="card mb-3 shadow-sm">
-												<img width="348" height="225" src="images/Untold_Festival.jpg" alt="Untold Festival ">
-											</div>	
-											<h3>Untold Festival </h3>
-											<p id="love">Untold Festival est l'un des épicentres de l'EDM d'Europe, qui a lieu chaque année au parc central de Cluj-Napoca, en Roumanie, où il reçoit chaque année plus de 300 000 personnes.</p>
-											<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-											<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-											<small class="text-muted">9 mins</small>
-									</div>
-							</div>
-							<div class="col-md-4" style="padding-top: 25px;" >
-									<div class="first_event">
-										<div class="card mb-3 shadow-sm">
-												<img width="348" height="225" src="images/Medusa_Festival.jpg" alt="Medusa Festival ">
-											</div>	
-											<h3>Medusa Festival </h3>
-											<p id="love">Medusa Festival met la dance à l'honneur dans la ville espagnole de Cullera. Sur les plages de la ville, DJs mainstream et underground se relient aux platines pour faire danser les festivaliers.</p>
-											<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-											<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-											<small class="text-muted">9 mins</small>
-									</div>
-							</div>
-						</div>
-				</ul>
-			</div>
-
-
-			
-                   
-                    
-                
-
-		</main>
-		<footer class="text-muted">
-				<div class="container">
-				  <p class="float-right">
-					<a href="#">Back to top</a>
-				  </p>
-				  <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
-				  <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
-				</div>
-			  </footer>
-		
-        <script src="jquery.js"></script>
-    <script src="event.js"></script>
-    <link src="event.css"></link>
-	</body>
 </html>
